@@ -10,15 +10,15 @@ import { useStyles } from '../components/Styles';
 const footers = [
     {
       title: 'Company',
-      description: ['Team', 'History', 'Contact us', 'Locations'],
+      description: ['Team', 'History', 'Contact us'],
     },
     {
       title: 'Features',
-      description: ['Cool stuff', 'Random feature', 'Team feature', 'Developer stuff', 'Another one'],
+      description: ['Cool stuff', 'Random feature', 'Developer stuff'],
     },
     {
       title: 'Resources',
-      description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
+      description: ['Resource #1', 'Resource #2', 'Resource #3'],
     },
     {
       title: 'Legal',

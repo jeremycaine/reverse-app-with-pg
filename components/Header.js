@@ -20,15 +20,12 @@ export default function Header() {
           
         </Typography>
         <nav>
-          <Link variant="button" color="textPrimary" href="/reverse" className={classes.link}>
-            Reverse
-          </Link>
           <Link variant="button" color="textPrimary" href="/about" className={classes.link}>
             About
           </Link>
         </nav>
-        <Button href="#" color="primary" variant="outlined" className={classes.link}>
-          Login
+        <Button href="/reverse" color="primary" variant="outlined" className={classes.link}>
+          Reverse
         </Button>
       </Toolbar>
     </AppBar>     
