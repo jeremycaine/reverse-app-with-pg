@@ -1,0 +1,20 @@
+{
+  "name": "reverse-with-nextjs-material",
+  "version": "4.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.9.1",
+    "clsx": "latest",
+    "dotenv": "latest",
+    "next": "latest",
+    "prop-types": "latest",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
