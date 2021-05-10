@@ -24,7 +24,7 @@ const pool = new Pool({
   port: pgport,
   user: pguser,
   password: pgpassword,
-  database: pgdatabase,
+  database: db,
   ssl: { rejectUnauthorized: false }
 });
 
