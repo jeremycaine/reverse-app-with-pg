@@ -5,12 +5,11 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 
 import Layout from '../components/Layout';
-import CreateEntry from '../components/CreatEntry';
 import GetEntries from '../components/GetEntries';
 
 import { useStyles } from '../components/Styles';
 
-function Reverse () {
+function Show () {
   const classes = useStyles();
 
   return (
@@ -18,9 +17,9 @@ function Reverse () {
       <Container maxWidth="sm">
       <Box my={4}>
         <Typography variant="h5" component="h1" gutterBottom>
-          Reverse
+          Show Entries
         </Typography>
-        <CreateEntry /> 
+        <GetEntries />
       </Box>
       </Container>
     </Layout>
@@ -28,4 +27,4 @@ function Reverse () {
 
 };
 
-export default Reverse;
+export default Show;

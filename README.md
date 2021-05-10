@@ -16,7 +16,7 @@ PGUSER=jeremycaine
 PGDATABASE=sample
 ```
 
-# Setup application
+## Setup application
 Install the NodeJS dependencies
 ```
 npm install

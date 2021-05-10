@@ -8,16 +8,27 @@
     "clsx": "latest",
     "dotenv": "latest",
     "next": "latest",
+    "node-mocks-http": "^1.10.1",
+    "pg": "^8.6.0",
     "prop-types": "latest",
     "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "swr": "^0.5.6"
   },
   "scripts": {
     "pg-start": "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start",
     "pg-stop": "pg_ctl -D /usr/local/var/postgres stop -s -m fast",
-    "pg-init": "createdb -h localhost -p 5432 -U jeremycaine sample && psql -d sample -f pg-init.sql",
+    "pg-createdb": "createdb -h localhost -p 5432 -U jeremycaine sample",
+    "pg-data": "psql -d sample -f pg-init.sql",
+    "test": "jest",
     "dev": "next",
     "build": "next build",
     "start": "next start"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "should": "^13.2.3",
+    "jest": "^26.6.3"
   }
 }
