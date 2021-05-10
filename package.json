@@ -18,11 +18,11 @@
   "scripts": {
     "pg-start": "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start",
     "pg-stop": "pg_ctl -D /usr/local/var/postgres stop -s -m fast",
-    "pg-createdb": "createdb -h localhost -p 5432 -U jeremycaine reverse",
+    "pg-createdb": "createdb reverse",
     "pg-data": "psql -d sample -f pg-data.sql",
     "test": "jest",
     "dev": "next",
-    "build": "next build && psql -d sample -f pg-data.sql",
+    "build": "next build && ./pg-db.sh reverse && psql -d reverse -f pg-data.sql",
     "start": "next start"
   },
   "devDependencies": {
