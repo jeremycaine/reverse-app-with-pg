@@ -19,10 +19,10 @@
     "pg-start": "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start",
     "pg-stop": "pg_ctl -D /usr/local/var/postgres stop -s -m fast",
     "pg-createdb": "createdb reverse",
-    "pg-data": "psql -d sample -f pg-data.sql",
+    "pg-data": "psql -d reverse -f pg-data.sql",
     "test": "jest",
     "dev": "next",
-    "build": "next build && ./pg-db.sh reverse && psql -d reverse -f pg-data.sql",
+    "build": "next build && ./psql.sh reverse",
     "start": "next start"
   },
   "devDependencies": {
