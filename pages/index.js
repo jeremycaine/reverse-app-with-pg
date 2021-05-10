@@ -9,7 +9,6 @@ import Layout from '../components/Layout';
 import Link from '../components/Link';
 import { useStyles } from '../components/Styles';
 
-
 export default function App() {
   const classes = useStyles();
 

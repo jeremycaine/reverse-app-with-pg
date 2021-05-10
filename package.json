@@ -23,7 +23,7 @@
     "test": "jest",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "echo $PGHOST && next start"
   },
   "devDependencies": {
     "chai": "^4.2.0",
