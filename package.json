@@ -22,7 +22,7 @@
     "pg-data": "psql -d reverse -f pg-data.sql",
     "test": "jest",
     "dev": "next",
-    "build": "next build && ./psql.sh reverse",
+    "build": "next build && ./psql.sh",
     "start": "next start"
   },
   "devDependencies": {
