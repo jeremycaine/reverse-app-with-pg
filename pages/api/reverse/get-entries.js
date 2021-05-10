@@ -7,7 +7,7 @@ export default function handler(request, response) {
     //const isReverse = request.body.isReverse;
     console.log('select txt');
     
-    const text = 'SELECT * FROM sample.echo';
+    const text = 'SELECT * FROM reverse.echo';
     const values = '';
 
     return new Promise((resolve, reject) => {

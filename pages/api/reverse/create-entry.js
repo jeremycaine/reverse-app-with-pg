@@ -7,7 +7,7 @@ export default function handler(request, response) {
     const isReverse = request.body.isReverse;
     console.log('insert text', txt, isReverse);
     
-    const text = 'INSERT INTO sample.echo(txt, isReverse) VALUES($1, $2) RETURNING *';
+    const text = 'INSERT INTO reverse.echo(txt, isReverse) VALUES($1, $2) RETURNING *';
     const values = [txt, isReverse];
 
     return new Promise((resolve, reject) => {
