@@ -17,7 +17,7 @@ function Show () {
       <Container maxWidth="sm">
       <Box my={4}>
         <Typography variant="h5" component="h1" gutterBottom>
-          Show Entries
+          Show Entries (Mock Data Testing)
         </Typography>
         <GetEntries />
       </Box>

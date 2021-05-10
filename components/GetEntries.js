@@ -23,10 +23,10 @@ function GetEntries ( { data }) {
   //if (error) return <div>failed to load</div>
   //if (!rows) return <div>loading...</div>
 
-  const { rows } = data;
-  console.log('rows', rows);
+  //const { rows } = data;
+  //console.log('rows', rows);
 
-  var arr = [
+  var rows = [
     { id: 1, txt: 'hello', isreverse: false },
   { id: 2, txt: 'doog yrev', isreverse: true },
   { id: 3, txt: '', isreverse: false },

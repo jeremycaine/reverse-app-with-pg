@@ -6,7 +6,6 @@ import Typography from '@material-ui/core/Typography';
 
 import Layout from '../components/Layout';
 import CreateEntry from '../components/CreatEntry';
-import GetEntries from '../components/GetEntries';
 
 import { useStyles } from '../components/Styles';
 
