@@ -10,14 +10,16 @@ console.log("PGHOST=%s", pghost);
 console.log("PGPORT=%s", pgport);
 console.log("PGUSER=%s", pguser);
 console.log("PGPASSWORD=%s", pgpassword);
+console.log("PGDATABASE=%s", pgdatabase);
 
 // hack to cope with IBM Cloudb db api returning '/' on front of db name in the 'path' var
 var db = pgdatabase;
 if (db.charAt(0) === '/') {
   db = db.substring(1);
+  console.log("if we need to strip front / then doing that now");
+  console.log("PGDATABASE=%s", db);
 }
 
-console.log("PGDATABASE=%s", db);
 
 const pool = new Pool({
   host: pghost,

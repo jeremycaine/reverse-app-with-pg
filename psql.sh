@@ -1,5 +1,5 @@
 echo pghost $PGHOST
-echo $PGPORT
-echo $PGUSER
-echo $PGPASSWORD
+echo pgport $PGPORT
+echo pguser $PGUSER
+echo pgpassword $PGPASSWORD
 psql -d ibmclouddb -f pg-data.sql
